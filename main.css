@@ -1,0 +1,107 @@
+/* LET THE STYLING BEGIN */
+body{
+    background-image:url(https://wallpaperaccess.com/full/1182407.jpg);
+    
+}
+.n{
+    width:60px;
+    height:60px;
+}
+#about{
+    color:gold;
+    text-decoration: none;
+    font-size: 20px;
+   position: absolute;
+   left:100px;
+   bottom:200px;
+}
+#help{
+    color:gold;
+    text-decoration: none;
+    font-size: 20px;
+   position: absolute;
+   left:250px;
+   bottom:200px;
+}
+#author{
+    color:gold;
+    text-decoration: none;
+    font-size: 20px;
+   position: absolute;
+   left:350px;
+   bottom:200px;
+}
+span{
+    
+    letter-spacing:20px;
+    transition:width 2s, height 2s, transform 2s;
+    animation: alternate-reverse;
+    animation:text 5s 1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name:ex;
+}
+.link1{
+    text-align: center;
+    border-radius:10%;
+    border-color:none;
+    border-width:2px;
+     text-decoration: none;
+     padding-left:40px;
+     padding-right: 40px;
+     font-size: 50px;
+     font-weight: 500;
+     color:gold;
+     position:absolute;
+     left:550px;
+     bottom:200px;
+}
+
+.ii{
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    top:10px;
+    right:0px;
+    width:100px;
+    height:100px;
+}
+.link1:hover,.link1:focus{
+     background-color:rgb(16, 16, 30);
+    color:gold;
+    border-color: gold;
+}
+.w{
+    color: gold;
+    font-size:20px;
+    font-weight:300;
+    position:absolute;
+    left:100px;
+    bottom:200px;
+    justify-content: space-between;
+    
+}
+@keyframes ex{
+
+   from{ color:white;}
+   to{ transition-delay: 3s;
+    color:gold;}
+
+    0%{
+        letter-spacing:0px;
+        color:white;
+       margin-top:10px;
+    }
+    30%{
+        letter-spacing:15px;
+         margin-bottom:-40px;
+    }
+    85%{
+        letter-spacing:18px;
+        margin-bottom: 0px;
+    }
+    100%{
+        letter-spacing:20px;
+        
+    }
+    
+}

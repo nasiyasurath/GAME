@@ -1,0 +1,124 @@
+body{
+    padding:0;
+    margin:0;
+   
+    background-image: url(https://wallpaperaccess.com/full/1182407.jpg);
+}
+
+h1{
+    font-size: 50px;
+    color:gold;
+    margin-top:20px;
+    position:absolute;
+    top:0px;
+
+    left:50px;
+    font-size:70px;
+    letter-spacing:20px;
+    animation-name:ex;
+    animation-duration: 1s ;
+
+}
+@keyframes ex{
+
+from{ color:white;}
+to{ transition-delay: 3s;
+ color:gold;}
+
+ 0%{
+     letter-spacing:0px;
+     color:white;
+    margin-top:10px;
+ }
+ 30%{
+     letter-spacing:15px;
+      margin-bottom:-40px;
+ }
+ 85%{
+     letter-spacing:18px;
+     margin-bottom: 0px;
+ }
+ 100%{
+     letter-spacing:20px;
+
+    }  
+} 
+.game{
+    display:grid;
+    position: absolute;
+    top:180px;
+    left:50px;
+    grid-template-columns:repeat(4,200px);
+    gap:20px;
+    grid-template-rows: 1;
+    
+}
+
+#gameBoard div{
+    height:150px;
+    width:200px;
+    border:2px solid gold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color:black;
+   
+}
+
+.callback{
+    
+    opacity: 0.8;
+    background-image: linear-gradient(1deg,black,rgb(16, 16, 30));
+    background-position:  10px 0, 10px 0,0 0;
+    background-size: 90px 90px;
+    background-repeat: repeat;
+    
+}
+#gameBoard div:hover{
+     cursor:pointer; 
+     outline:rgb(16, 16, 30);
+}
+
+
+.won{
+    font-size: 50px;
+    height:50px;
+    display: flex;
+    color:gold;
+    width:100px;
+    position: absolute;
+    top:350px;
+    left:400px;
+    
+}
+#restartButton{
+    padding:10px;
+    position: absolute;
+    top:30px;
+    right:300px;
+    border:none;
+    background-color:black;
+    color:gold;
+    font-size: 30px;
+    border-color:black;
+    border-radius:30%;
+    border-style:solid;
+
+
+}
+#restartButton:hover{
+    background-color:rgb(16, 16, 30);
+    color:gold;
+    
+}
+
+#score{
+    color:gold;
+    font-size: 30px;
+    padding:10px;
+    padding-right:10px;
+    position: absolute;
+    top:30px;
+    right:100px;
+}
